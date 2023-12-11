@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #27ae60;
+}
+
+header {
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+h1 {
+  font-size: 28px; /* Ajusta el tamaño del h1 según tus preferencias */
+  margin-top: 10px; /* Espaciado superior */
+  color: #ffffff; /* Color del texto */
+}
+
+h2 {
+  font-size: 18px; /* Ajusta el tamaño del h2 según tus preferencias */
+  margin-bottom: 10px; /* Espaciado inferior */
+  color: #ffffff; /* Color del texto */
+}
+
+.redes-sociales1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.redes-sociales1 a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333; /* Cambia el color según tus preferencias */
+  text-decoration: none;
+}
+
+.redes-sociales1 a:hover {
+  color: #555; /* Cambia el color al pasar el mouse según tus preferencias */
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+  min-height: calc(100vh - 220px);
+}
+
+#perfil {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #ffffff; /* Borde como línea */
+  margin: 20px auto;
+  display: block;
+}
+
+.redes-sociales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.redes-sociales a {
+  display: flex;
+  width: 35%; /* Ocupa el 60% del ancho de la pantalla */
+  margin: 5px auto;
+  padding: 20px;
+  font-size: 18px;
+  color: #333;
+  background-color: #fff;
+  align-items: center;
+  text-decoration: none;
+  border: 3px solid #333; /* Borde como línea */
+  border-radius: 35px;
+  transition: background-color 0.3s ease;
+}
+
+.redes-sociales a i {
+  display: flex;
+  align-items: center; /* Alinea el contenido verticalmente */
+  margin-right: 5px;
+}
+
+.redes-sociales a span {
+  flex-grow: 1; /* Hace que el texto ocupe todo el espacio disponible */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+.redes-sociales a:hover {
+  background-color: #333333;
+  color: #fff;
+}
+
+
+/* Estilos adicionales para centrar correctamente */
+.youtube-iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 560px; /* Ajusta según tus necesidades */
+    height: 315px; /* Ajusta según tus necesidades */
+    overflow: hidden;
+    border-radius: 15px; /* Ajusta el valor para redondear los bordes */
+    margin: 20px auto 0; /* Añade este margen para centrar horizontalmente */
+}
+
+/* Estilos para el iframe de video dentro del contenedor redondeado */
+.youtube-iframe iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
+footer {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+  font-size: 24px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 7px;
+}
+/* Media query para pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 16px;
+    }
+  
+    .redes-sociales a {
+      width: 80%;
+    }
+  
+    .youtube-iframe {
+      width: 90%;
+    }
+  }
+
+  /* Media query para pantallas pequeñas (móviles) */
+@media screen and (max-width: 500px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 16px;
+    }
+  
+    .redes-sociales a {
+      width: 80%;
+    }
+  
+    .youtube-iframe iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    
+  }
